@@ -1,0 +1,508 @@
+:root {
+    --primary-color: #122C47;
+    --light-primary-color: #367fcc;
+    --secondary-color: #7D1735;
+    --light-secondary-color: #b8224f;
+    --tertiary-color: #C08E26;
+    --quaternary-color: #ffffff;
+    --font-primary: 'Heebo', sans-serif;
+    --font-x-large: 18px;
+    --font-large: 16px;
+    --font-medium: 14px;
+    --font-regular: 12px;
+    --font-small: 10px;
+    --font-x-small: 8px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+.bg-blue {
+    background-color: var(--primary-color);
+}
+
+.bg-light-gray {
+    background-color: rgb(238, 238, 238);
+}
+
+.text-blue {
+    color: var(--primary-color);
+}
+
+.text-light-blue {
+    color: var(--light-primary-color);
+}
+
+.text-red {
+    color: var(--secondary-color);
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-half {
+    width: 50%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.h-half {
+    height: 50%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.flow-horizontal {
+    display: flex;
+    align-items: center;
+}
+
+.gap-1 {
+    gap: 4px;
+}
+
+.gap-2 {
+    gap: 8px;
+}
+
+.gap-3 {
+    gap: 12px;
+}
+
+.gap-4 {
+    gap: 16px;
+}
+
+.gap-5 {
+    gap: 20px;
+}
+
+.gap-6 {
+    gap: 24px;
+}
+
+.gap-10 {
+    gap: 40px;
+}
+
+.gap-35px {
+    gap: 35px;
+}
+
+.text-white {
+    color: var(--quaternary-color);
+}
+
+.decoration-none {
+    text-decoration: none;
+}
+
+.text-nowrap {
+    text-wrap: nowrap;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-end {
+    text-align: right;
+}
+
+.flex-1 {
+    flex-grow: 1;
+}
+
+.fs-medium {
+    font-size: var(--font-medium);
+}
+
+.fs-sm {
+    font-size: var(--font-small);
+}
+
+.fs-lg {
+    font-size: var(--font-large);
+}
+
+.fs-xl {
+    font-size: var(--font-x-large);
+}
+
+.fs-24px {
+    font-size: 24px;
+}
+
+.fs-2medium {
+    font-size: calc(2 * var(--font-medium));
+}
+
+.fw-semibold {
+    font-weight: 600;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.bg-none {
+    background-color: transparent;
+}
+
+.border-none {
+    border: none;
+}
+
+.border-light-blue {
+    border: 1px solid var(--light-primary-color);
+}
+
+button {
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'Heebo', sans-serif;
+}
+
+.p-0 {
+    padding: 0px !important;
+}
+
+.p-3 {
+    padding: 12px !important;
+}
+
+.p-4 {
+    padding: 16px !important;
+}
+
+.p-6 {
+    padding: 24px !important;
+}
+
+.py-2 {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+
+.py-3 {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+}
+
+.py-4 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+
+.px-2 {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.px-3 {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+
+.px-4 {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+.px-6 {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+}
+
+.ps-5 {
+    padding-left: 20px !important;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mb-3 {
+    margin-bottom: 12px;
+}
+
+.mb-4 {
+    margin-bottom: 16px;
+}
+
+.mb-6 {
+    margin-bottom: 24px;
+}
+
+.mb-8 {
+    margin-bottom: 32px;
+}
+
+.mt-3 {
+    margin-top: 12px;
+}
+
+.ms-3 {
+    margin-left: 12px;
+}
+
+.me-3 {
+    margin-right: 12px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* general buttons start */
+.btn-blue {
+    background-color: var(--light-primary-color);
+    color: var(--quaternary-color);
+    padding: 12px 16px;
+    border: none;
+    transition: all 0.2s ease-out;
+    font-weight: 600;
+}
+
+.btn-blue:hover {
+    background-color: var(--primary-color);
+}
+
+.border {
+    border: 1px solid gainsboro;
+}
+
+.btn-red {
+    background-color: var(--light-secondary-color);
+    color: var(--quaternary-color);
+    padding: 12px 16px;
+    border: none;
+    transition: all 0.2s ease-out;
+    font-weight: 600;
+}
+
+.btn-red:hover {
+    background-color: var(--secondary-color);
+}
+
+/* general buttons end */
+.border {
+    border: 1px solid gainsboro;
+}
+
+.border-l {
+    border-left: 1px solid gainsboro;
+}
+
+.border-r {
+    border-right: 1px solid gainsboro;
+}
+
+.border-b {
+    border-bottom: 1px solid gainsboro;
+}
+
+.border-t {
+    border-top: 1px solid gainsboro;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.top-0 {
+    top: 0px;
+}
+
+.left-0 {
+    left: 0px;
+}
+
+.bottom-0 {
+    bottom: 0px;
+}
+
+.bottom-2 {
+    bottom: 8px;
+}
+.bottom-5 {
+    bottom: 20px;
+}
+
+.right-2 {
+    right: 8px;
+}
+.right-5 {
+    right: 20px;
+}
+
+.right-0 {
+    right: 0px;
+}
+
+.rounded-0 {
+    border-radius: 0px;
+}
+
+.rounded-circle {
+    border-radius: 50%;
+}
+
+.font-heebo {
+    font-family: 'Heebo', sans-serif;
+}
+
+.custom-input {
+    height: 50px;
+    border: 1px solid rgb(238, 238, 238);
+    padding: 0px 20px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Heebo', sans-serif;
+    font-size: var(--font-medium);
+}
+
+.custom-input:focus {
+    border: 1px solid var(--light-primary-color);
+}
+
+.hidden {
+    display: none;
+}
+
+/* nav bar's link hover effect start */
+.pre-header {
+    height: 46px;
+    font-size: var(--font-medium);
+}
+
+.pre-head-min-width {
+    min-width: 340px;
+}
+
+.navbar {
+    height: 100px;
+}
+
+.mob-navbar {
+    height: 80px;
+}
+
+.nav-link .active {
+    color: var(--light-primary-color);
+}
+
+.nav-link .nav-link-hover-style {
+    position: relative;
+}
+
+.nav-link .nav-link-hover-style::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    background-color: var(--light-primary-color);
+    bottom: -3px;
+    left: 0px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-link .nav-link-hover-style:hover::before {
+    width: 100%;
+}
+
+.nav-link .nav-link-hover-style.active::before {
+    width: 100%;
+}
+
+/* nav bar's link hover effect end */
+
+/* sign in & sign up modal start */
+
+.auth-modal-container {
+    background-color: rgba(0, 0, 0, 0.637);
+    z-index: 1000;
+}
+
+.auth-modal {
+    max-width: 410px;
+    width: 100%;
+    background-color: var(--quaternary-color);
+    border-radius: 6px;
+}
+
+.toggle-btn-container {
+    width: 230px;
+}
+
+.toggle-btn-container .active {
+    background-color: var(--secondary-color);
+    color: var(--quaternary-color);
+}
+
+.whatsapp-chat {
+    z-index: 1000;
+}
+
+/* sign in & sign up modal end */
+
+@media (max-width: 768px) {
+    .md-hidden {
+        display: none;
+    }
+
+    .md-block {
+        display: block;
+    }
+
+    .md-max-w-none {
+        min-width: unset;
+    }
+}
