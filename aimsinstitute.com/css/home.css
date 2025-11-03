@@ -42,6 +42,36 @@
 
 /* hero section end */
 
+/* box section start */
+
+.max-w-285px {
+    max-width: 285px;
+}
+
+/* box section end */
+
+/* e learning start */
+.e-learning-bg {
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+
+.box-shadow-gray {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 60px 15px;
+}
+
+.max-w-530px {
+    max-width: 530px;
+}
+
+.max-w-450px {
+    max-width: 450px;
+}
+
+/* e learning end */
+
 @media (max-width: 768px) {
     .hero-banner {
         height: 40vh;

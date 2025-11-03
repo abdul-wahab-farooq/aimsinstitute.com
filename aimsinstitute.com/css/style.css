@@ -9,7 +9,6 @@
     --quaternary-color: #ffffff;
     --font-primary: 'Heebo', sans-serif;
     --font-caveat: "Caveat", Sans-serif;
-    --red-color: #FF4612;
     --font-x-large: 18px;
     --font-large: 16px;
     --font-medium: 14px;
@@ -95,6 +94,14 @@ body {
     align-items: center;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
 .gap-1 {
     gap: 4px;
 }
@@ -141,6 +148,10 @@ body {
 
 .block {
     display: block;
+}
+
+.flex {
+    display: flex;
 }
 
 .inline-block {
@@ -207,11 +218,7 @@ body {
     border: 1px solid var(--light-primary-color);
 }
 
-.box-shadow-gray {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 60px 15px;
-}
-
-.box-shadow-small{
+.box-shadow-small {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -296,6 +303,18 @@ button {
     margin-right: auto;
 }
 
+.m-0 {
+    margin: 0px;
+}
+
+.m-3 {
+    margin: 12px;
+}
+
+.mb-2 {
+    margin-bottom: 8px;
+}
+
 .mb-3 {
     margin-bottom: 12px;
 }
@@ -310,6 +329,10 @@ button {
 
 .mb-8 {
     margin-bottom: 32px;
+}
+
+.mt-2 {
+    margin-top: 8px;
 }
 
 .mt-3 {
@@ -445,6 +468,10 @@ button {
     font-family: 'Heebo', sans-serif;
 }
 
+.font-caveat {
+    font-family: var(--font-caveat);
+}
+
 .custom-input {
     height: 50px;
     border: 1px solid rgb(238, 238, 238);
@@ -467,10 +494,6 @@ button {
 .pre-header {
     height: 46px;
     font-size: var(--font-medium);
-}
-
-.pre-head-min-width {
-    min-width: 340px;
 }
 
 .navbar {
@@ -539,51 +562,29 @@ button {
 
 /* sign in & sign up modal end */
 
-/* <!-- box section start --> */
-.itemtext {
-    flex-basis: 23%;
-    margin: 1%;
-}
-
-.itemtext h4 {
-    margin-bottom: -10px;
-
-}
-
-.itemtext p {
-    line-height: 26px;
-}
-
-.elementor {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-/* <!-- box section end --> */
-
-/* <!-- E-Learning start --> */
-.titleitem {
-    flex-basis: 48%;
-    margin: 1%;
-}
-
-.limited span {
-    color: var(--red-color);
-    font-family: var(--font-caveat);
-}
-
-.imagebdl {
-    background-image: url(/aimsinstitute.com/images/hero/EDUBIN00152-2.png);
-    background-position: bottom right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    max-width: 1200px;
-    margin: auto;
-}
-
-/* E-Learning end */
-
 @media (max-width: 768px) {
+    .sm-hidden {
+        display: none;
+    }
+
+    .sm-block {
+        display: block;
+    }
+
+    .sm-max-w-none {
+        min-width: unset !important;
+    }
+
+    .sm-flex-row {
+        flex-direction: row;
+    }
+
+    .sm-flex-col {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 768px) {
     .md-hidden {
         display: none;
     }
@@ -593,47 +594,31 @@ button {
     }
 
     .md-max-w-none {
-        min-width: unset;
+        min-width: unset !important;
     }
-}
 
-/* ------------box section start--------------- */
-@media only screen and (min-width:0px) and (max-width:670px) {
-    .elementor {
+    .md-flex-row {
+        flex-direction: row;
+    }
+
+    .md-max-w-340px {
+        max-width: 340px;
+    }
+
+    .md-flex-col {
         flex-direction: column;
     }
-}
 
-@media only screen and (min-width:576px) and (max-width:1176px) {
-    .itemtext {
-        flex-basis: 48%;
-        margin: 1%;
+    .md-gap-2 {
+        gap: 8px;
     }
 
-    .itemtext {
-        margin-top: 40px;
-    }
-}
-
-/* <!-- box section end --> */
-
-/* <!-- E-Learning start --> */
-@media only screen and (min-width:0px) and (max-width:990px) {
-    .learnitem {
-        flex-direction: column;
-        margin: 15px;
+    .md-px-0 {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
-    .titleitem {
-        flex-basis: 48%;
-        margin: 1%;
-        padding-top: 15px;
-    }
-}
-
-@media only screen and (min-width:0px) and (max-width:878px) {
-    .titleitem {
-        flex-basis: auto;
-        margin: 1%;
+    .md-flex {
+        display: flex;
     }
 }
