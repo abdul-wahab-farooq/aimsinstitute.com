@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+
 :root {
     --primary-color: #122C47;
     --light-primary-color: #367fcc;
@@ -6,6 +8,8 @@
     --tertiary-color: #C08E26;
     --quaternary-color: #ffffff;
     --font-primary: 'Heebo', sans-serif;
+    --font-caveat: "Caveat", Sans-serif;
+    --red-color: #FF4612;
     --font-x-large: 18px;
     --font-large: 16px;
     --font-medium: 14px;
@@ -27,6 +31,10 @@ body {
 
 .bg-light-gray {
     background-color: rgb(238, 238, 238);
+}
+
+.bg-white {
+    background-color: var(--quaternary-color);
 }
 
 .text-blue {
@@ -171,6 +179,10 @@ body {
     font-size: 24px;
 }
 
+.fs-36px {
+    font-size: 36px;
+}
+
 .fs-2medium {
     font-size: calc(2 * var(--font-medium));
 }
@@ -193,6 +205,14 @@ body {
 
 .border-light-blue {
     border: 1px solid var(--light-primary-color);
+}
+
+.box-shadow-gray {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 60px 15px;
+}
+
+.box-shadow-small{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 button {
@@ -232,6 +252,11 @@ button {
     padding-bottom: 16px !important;
 }
 
+.py-13 {
+    padding-top: 52px !important;
+    padding-bottom: 52px !important;
+}
+
 .px-2 {
     padding-left: 8px !important;
     padding-right: 8px !important;
@@ -250,6 +275,16 @@ button {
 .px-6 {
     padding-left: 24px !important;
     padding-right: 24px !important;
+}
+
+.px-7 {
+    padding-left: 28px !important;
+    padding-right: 28px !important;
+}
+
+.px-10 {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
 }
 
 .ps-5 {
@@ -279,6 +314,11 @@ button {
 
 .mt-3 {
     margin-top: 12px;
+}
+
+.mt-15 {
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
 }
 
 .ms-3 {
@@ -372,6 +412,7 @@ button {
 .bottom-2 {
     bottom: 8px;
 }
+
 .bottom-5 {
     bottom: 20px;
 }
@@ -379,6 +420,7 @@ button {
 .right-2 {
     right: 8px;
 }
+
 .right-5 {
     right: 20px;
 }
@@ -389,6 +431,10 @@ button {
 
 .rounded-0 {
     border-radius: 0px;
+}
+
+.rounded-3 {
+    border-radius: 12px;
 }
 
 .rounded-circle {
@@ -493,6 +539,50 @@ button {
 
 /* sign in & sign up modal end */
 
+/* <!-- box section start --> */
+.itemtext {
+    flex-basis: 23%;
+    margin: 1%;
+}
+
+.itemtext h4 {
+    margin-bottom: -10px;
+
+}
+
+.itemtext p {
+    line-height: 26px;
+}
+
+.elementor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* <!-- box section end --> */
+
+/* <!-- E-Learning start --> */
+.titleitem {
+    flex-basis: 48%;
+    margin: 1%;
+}
+
+.limited span {
+    color: var(--red-color);
+    font-family: var(--font-caveat);
+}
+
+.imagebdl {
+    background-image: url(/aimsinstitute.com/images/hero/EDUBIN00152-2.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* E-Learning end */
+
 @media (max-width: 768px) {
     .md-hidden {
         display: none;
@@ -504,5 +594,46 @@ button {
 
     .md-max-w-none {
         min-width: unset;
+    }
+}
+
+/* ------------box section start--------------- */
+@media only screen and (min-width:0px) and (max-width:670px) {
+    .elementor {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:576px) and (max-width:1176px) {
+    .itemtext {
+        flex-basis: 48%;
+        margin: 1%;
+    }
+
+    .itemtext {
+        margin-top: 40px;
+    }
+}
+
+/* <!-- box section end --> */
+
+/* <!-- E-Learning start --> */
+@media only screen and (min-width:0px) and (max-width:990px) {
+    .learnitem {
+        flex-direction: column;
+        margin: 15px;
+    }
+
+    .titleitem {
+        flex-basis: 48%;
+        margin: 1%;
+        padding-top: 15px;
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:878px) {
+    .titleitem {
+        flex-basis: auto;
+        margin: 1%;
     }
 }
