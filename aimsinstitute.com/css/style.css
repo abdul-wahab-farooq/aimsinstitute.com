@@ -7,6 +7,7 @@
     --light-secondary-color: #b8224f;
     --tertiary-color: #C08E26;
     --quaternary-color: #ffffff;
+    --light-blue: #E1EFFB;
     --font-primary: 'Heebo', sans-serif;
     --font-caveat: "Caveat", Sans-serif;
     --font-x-large: 18px;
@@ -36,6 +37,10 @@ body {
     background-color: var(--quaternary-color);
 }
 
+.bg-light-blue {
+    background-color: var(--light-blue);
+}
+
 .text-blue {
     color: var(--primary-color);
 }
@@ -46,6 +51,10 @@ body {
 
 .text-red {
     color: var(--secondary-color);
+}
+
+.text-tertiary{
+    color: var(--tertiary-color);
 }
 
 .w-full {
@@ -158,6 +167,10 @@ body {
     display: inline-block;
 }
 
+.ruby{
+    display: ruby;
+}
+
 .text-center {
     text-align: center;
 }
@@ -188,6 +201,10 @@ body {
 
 .fs-24px {
     font-size: 24px;
+}
+
+.fs-25px{
+    font-size: 25px;
 }
 
 .fs-36px {
@@ -294,6 +311,11 @@ button {
     padding-right: 40px !important;
 }
 
+.px-11 {
+    padding-left: 44px !important;
+    padding-right: 44px !important;
+}
+
 .ps-5 {
     padding-left: 20px !important;
 }
@@ -301,6 +323,11 @@ button {
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
+}
+
+.mx-12 {
+    margin-left: 48px !important;
+    margin-right: 48px !important;
 }
 
 .m-0 {
@@ -339,13 +366,26 @@ button {
     margin-top: 12px;
 }
 
+.mt-4 {
+    margin-top: 16px;
+}
+
 .mt-15 {
     padding-top: 60px !important;
     padding-bottom: 60px !important;
 }
 
+.my-10{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 .ms-3 {
     margin-left: 12px;
+}
+
+.ms-4 {
+    margin-left: 16px;
 }
 
 .me-3 {
@@ -458,6 +498,10 @@ button {
 
 .rounded-3 {
     border-radius: 12px;
+}
+
+.rounded-4 {
+    border-radius: 16px;
 }
 
 .rounded-circle {
