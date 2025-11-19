@@ -6,6 +6,7 @@
     --secondary-color: #7D1735;
     --light-secondary-color: #b8224f;
     --tertiary-color: #C08E26;
+    --light-tertiary-color: #e4aa2f;
     --quaternary-color: #ffffff;
     --font-primary: 'Heebo', sans-serif;
     --font-caveat: "Caveat", Sans-serif;
@@ -36,6 +37,10 @@ body {
     background-color: var(--quaternary-color);
 }
 
+.bg-black {
+    background-color: black;
+}
+
 .text-blue {
     color: var(--primary-color);
 }
@@ -48,8 +53,20 @@ body {
     color: var(--secondary-color);
 }
 
+.text-yellow {
+    color: var(--tertiary-color)
+}
+
+.text-light-yellow {
+    color: var(--light-tertiary-color)
+}
+
 .w-full {
     width: 100%;
+}
+
+.w-fit {
+    width: fit-content;
 }
 
 .w-half {
@@ -83,6 +100,10 @@ body {
 
 .justify-end {
     justify-content: end;
+}
+
+.items-start {
+    align-items: start;
 }
 
 .items-center {
@@ -130,8 +151,16 @@ body {
     gap: 40px;
 }
 
+.gap-15 {
+    gap: 60px;
+}
+
 .gap-35px {
     gap: 35px;
+}
+
+.gap-auto {
+    gap: auto;
 }
 
 .text-white {
@@ -174,6 +203,10 @@ body {
     font-size: var(--font-medium);
 }
 
+.fs-regular {
+    font-size: var(--font-regular);
+}
+
 .fs-sm {
     font-size: var(--font-small);
 }
@@ -186,8 +219,20 @@ body {
     font-size: var(--font-x-large);
 }
 
+.fs-20px {
+    font-size: 20px;
+}
+
 .fs-24px {
     font-size: 24px;
+}
+
+.fs-30px {
+    font-size: 30px;
+}
+
+.fs-34px {
+    font-size: 34px;
 }
 
 .fs-36px {
@@ -198,6 +243,46 @@ body {
     font-size: calc(2 * var(--font-medium));
 }
 
+.fs-40px {
+    font-size: 40px;
+}
+
+.leading-1 {
+    line-height: 4px;
+}
+
+.leading-4 {
+    line-height: 16px;
+}
+
+.leading-5 {
+    line-height: 20px;
+}
+
+.leading-6 {
+    line-height: 24px;
+}
+
+.leading-7 {
+    line-height: 28px;
+}
+
+.leading-8 {
+    line-height: 32px;
+}
+
+.leading-9 {
+    line-height: 36px;
+}
+
+.leading-10 {
+    line-height: 40px;
+}
+
+.fw-normal {
+    font-weight: 400;
+}
+
 .fw-semibold {
     font-weight: 600;
 }
@@ -206,8 +291,20 @@ body {
     font-weight: 700;
 }
 
+.fw-heavybold {
+    font-weight: 900;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
 .bg-none {
     background-color: transparent;
+}
+
+.bg-light-yellow {
+    background-color: var(--light-tertiary-color);
 }
 
 .border-none {
@@ -222,6 +319,10 @@ body {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.shadow {
+    box-shadow: 1px 1px 15px 2px rgba(190, 190, 190, 0.788);
+}
+
 button {
     cursor: pointer;
     border-radius: 4px;
@@ -232,6 +333,14 @@ button {
     padding: 0px !important;
 }
 
+.p-1 {
+    padding: 4px !important;
+}
+
+.p-2 {
+    padding: 8px !important;
+}
+
 .p-3 {
     padding: 12px !important;
 }
@@ -239,9 +348,16 @@ button {
 .p-4 {
     padding: 16px !important;
 }
+.p-5 {
+    padding: 20px !important;
+}
 
 .p-6 {
     padding: 24px !important;
+}
+
+.p-30px {
+    padding: 30px !important;
 }
 
 .py-2 {
@@ -311,6 +427,14 @@ button {
     margin: 12px;
 }
 
+.ms-1 {
+    margin-left: 4px;
+}
+
+.ms-2 {
+    margin-left: 8px;
+}
+
 .mb-2 {
     margin-bottom: 8px;
 }
@@ -321,6 +445,9 @@ button {
 
 .mb-4 {
     margin-bottom: 16px;
+}
+.mb-5 {
+    margin-bottom: 20px;
 }
 
 .mb-6 {
@@ -337,6 +464,13 @@ button {
 
 .mt-3 {
     margin-top: 12px;
+}
+
+.mt-5 {
+    margin-top: 20px;
+}
+.mt-10 {
+    margin-top: 40px;
 }
 
 .mt-15 {
@@ -368,6 +502,26 @@ button {
 
 .btn-blue:hover {
     background-color: var(--primary-color);
+}
+
+.btn-blue-outline {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 6px 10px;
+    transition: all 0.2s ease-out;
+    font-weight: 600;
+    line-height: 16px;
+    font-size: var(--font-medium);
+}
+
+.btn-blue-outline:hover {
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+}
+
+.hover-text-underline:hover {
+    text-decoration: underline;
 }
 
 .border {
@@ -456,6 +610,14 @@ button {
     border-radius: 0px;
 }
 
+.rounded-1 {
+    border-radius: 4px;
+}
+
+.rounded-2 {
+    border-radius: 8px;
+}
+
 .rounded-3 {
     border-radius: 12px;
 }
@@ -497,7 +659,7 @@ button {
 }
 
 .navbar {
-    height: 100px;
+    height: 90px;
 }
 
 .mob-navbar {
@@ -529,6 +691,10 @@ button {
 
 .nav-link .nav-link-hover-style.active::before {
     width: 100%;
+}
+
+.background-norepeat {
+    background-repeat: no-repeat;
 }
 
 /* nav bar's link hover effect end */
@@ -620,5 +786,13 @@ button {
 
     .md-flex {
         display: flex;
+    }
+
+    .md-justify-between {
+        justify-content: space-between;
+    }
+
+    .md-items-start {
+        align-items: start;
     }
 }
