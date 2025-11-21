@@ -80,11 +80,52 @@
                             <a href="about.html"
                                 class="fs-medium fw-semibold decoration-none text-blue nav-link-hover-style">About
                                 Us</a>
-                            <a
-                                class="flow-horizontal gap-1 fs-medium fw-semibold decoration-none text-blue cursor-pointer nav-link-hover-style">
-                                Courses
-                                <i class="fa-solid fa-chevron-down fs-sm decoration-none text-blue"></i>
-                            </a>
+                            <div class="menu-item">
+                                <a
+                                    class="flow-horizontal gap-1 fs-medium fw-semibold decoration-none text-blue cursor-pointer nav-link-hover-style">
+                                    Courses
+                                    <i class="fa-solid fa-chevron-down fs-sm decoration-none text-blue"></i>
+                                </a>
+
+                                <!-- MEGA MENU -->
+                                <div class="mega-menu">
+                                    <div class="mega-menu-content">
+
+                                        <div class="mega-col">
+                                            <h4>Development</h4>
+                                            <a href="#">Web Development</a>
+                                            <a href="#">App Development</a>
+                                            <a href="#">Machine Learning</a>
+                                            <a href="#">Data Structures</a>
+                                        </div>
+
+                                        <div class="mega-col">
+                                            <h4>Business</h4>
+                                            <a href="#">Entrepreneurship</a>
+                                            <a href="#">Marketing</a>
+                                            <a href="#">Sales</a>
+                                            <a href="#">Management</a>
+                                        </div>
+
+                                        <div class="mega-col">
+                                            <h4>Design</h4>
+                                            <a href="#">UI/UX Design</a>
+                                            <a href="#">Graphic Design</a>
+                                            <a href="#">Animation</a>
+                                        </div>
+
+                                        <div class="mega-col">
+                                            <h4>Data & IT</h4>
+                                            <a href="#">Cloud Computing</a>
+                                            <a href="#">Cybersecurity</a>
+                                            <a href="#">Data Science</a>
+                                            <a href="#">AI Essentials</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
                             <a href="blog.html"
                                 class="fs-medium fw-semibold decoration-none text-blue nav-link-hover-style">Blogs</a>
                             <a href="contact.html"
@@ -95,9 +136,8 @@
                             <button class="bg-none border-none p-0">
                                 <i class="fas fa-search fs-xl"></i>
                             </button>
-                            <button class="btn-blue fs-medium">
-                                View Categories
-                            </button>
+                            <a href="#accrediations"
+                                class="btn-blue fs-medium rounded-1 decoration-none">Accrediations</a>
                         </div>
                     </div>
                 </div>
@@ -112,18 +152,57 @@
                     <img src="images/logo2.png" alt="logo" width="70" height="70">
                 </a>
                 <div class="flow-horizontal gap-4">
-                    <button class="btn-blue py-2 px-3">View Categories</button>
-                    <button class="bg-none border-none p-0">
-                        <i class="fa-solid fa-bars fs-24px"></i>
-                    </button>
+                    <a href="#accrediations" class="btn-blue fs-medium rounded-1 decoration-none">Accrediations</a>
+                    <i class="fa-solid fa-bars fs-24px" id="open-mobile-nav"></i>
+                </div>
+            </div>
+            <div class="mobile-menu bg-white fixed p-3 top-0" id="mobile-nav">
+                <i class="far fa-times-circle fs-24px text-red" id="close-mobile-nav"></i>
+                <div class="mobile-navlink flex flex-col gap-2 py-4">
+                    <a href="index.html" class="flex items-center gap-1 decoration-none text-blue fs-medium py-2">
+                        <i class="fas fa-angle-right"></i>Home
+                    </a>
+                    <a href="about.html" class="flex items-center gap-1 decoration-none text-blue fs-medium py-2">
+                        <i class="fas fa-angle-right"></i>About Us
+                    </a>
+                    <div class="fw-bold fs-20px text-red">All Courses</div>
+                    <ul style="list-style-type: none;" class="m-0">
+                        <li>
+                            <a href="about.html"
+                                class="flex items-center gap-1 decoration-none text-blue fs-medium py-2">
+                                <i class="fas fa-angle-right"></i>Level 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="flex items-center gap-1 decoration-none text-blue fs-medium py-2">
+                                <i class="fas fa-angle-right"></i>Level 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="flex items-center gap-1 decoration-none text-blue fs-medium py-2">
+                                <i class="fas fa-angle-right"></i>Level 3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="flex items-center gap-1 decoration-none text-blue fs-medium py-2">
+                                <i class="fas fa-angle-right"></i>Level 4
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="about.html" class="flex items-center gap-1 decoration-none text-blue fs-medium py-2">
+                        <i class="fas fa-angle-right"></i>Blogs
+                    </a>
+                    <a href="about.html" class="flex items-center gap-1 decoration-none text-blue fs-medium py-2">
+                        <i class="fas fa-angle-right"></i>Contact Us
+                    </a>
                 </div>
             </div>
         </nav>
         <!-- mobile navbar end -->
-
-        <!-- categories sidebar start -->
-
-        <!-- categories sidebar end -->
     </header>
     <main>
         <!-- hero section start -->
@@ -584,7 +663,7 @@
         <!-- review end -->
 
         <!-- accreditation start -->
-        <section>
+        <section id="accrediations">
             <div class="container">
                 <div class="bg-white rounded-2 p-5 shadow mb-5">
                     <div>
@@ -728,11 +807,75 @@
 
         <!-- whatsapp chat start -->
         <a href="https://wa.me/" target="_blank" class="fixed bottom-5 right-5 whatsapp-chat">
-            <img src="images/whatsapp.svg" alt="whatsapp" width="60" height="60">
+            <img src="images/whatsapp.svg" alt="whatsapp" width="50" height="50">
         </a>
         <!-- whatsapp chat end -->
     </main>
-
+    <footer>
+        <div class="footer bg-blue text-white py-13">
+            <div class="container">
+                <div class="flex justify-between flex-col md-flex-row gap-3">
+                    <div class="flex flex-col justify-between max-w-100 md-max-w-25 w-full">
+                        <div class="fw-bold fs-20px mb-3">About Us</div>
+                        <div class="fs-medium mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel in ipsa reiciendis nemo debitis
+                            iste exercitationem inventore
+                        </div>
+                        <div class="flex items-center gap-2 fs-medium mb-2">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, at!
+                        </div>
+                        <div class="flex items-center gap-2 fs-medium mb-2">
+                            <i class="fas fa-envelope"></i>
+                            info@aimsinstitute.com
+                        </div>
+                        <div class="flex items-center gap-2 fs-medium">
+                            <i class="fas fa-phone"></i>
+                            +92 323 2354474
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between max-w-100 md-max-w-25 w-full">
+                        <div class="fw-bold fs-20px mb-3">Quick links</div>
+                        <a href="home.html"
+                            class="fs-medium text-white decoration-none hover-text-underline mb-3">Home</a>
+                        <a href="about.html"
+                            class="fs-medium text-white decoration-none hover-text-underline mb-3">About Us</a>
+                        <a href="course.html"
+                            class="fs-medium text-white decoration-none hover-text-underline mb-3">Courses</a>
+                        <a href="terms.html"
+                            class="fs-medium text-white decoration-none hover-text-underline mb-3">Terms &
+                            Conditions</a>
+                    </div>
+                    <div class="flex flex-col justify-between max-w-100 md-max-w-25 w-full">
+                        <div class="fw-bold fs-20px mb-3">Courses</div>
+                        <a href="home.html"
+                            class="fs-medium text-white decoration-none hover-text-underline mb-3">Graduate Programs</a>
+                        <a href="about.html"
+                            class="fs-medium text-white decoration-none hover-text-underline mb-3">Diploma courses</a>
+                        <a href="course.html"
+                            class="fs-medium text-white decoration-none hover-text-underline mb-3">Undergraduate
+                            courses</a>
+                        <a href="terms.html"
+                            class="fs-medium text-white decoration-none hover-text-underline mb-3">Short Courses</a>
+                        <a href="terms.html"
+                            class="fs-medium text-white decoration-none hover-text-underline mb-3">Other Courses</a>
+                    </div>
+                    <div class="flex flex-col justify-between max-w-100 md-max-w-25 w-full">
+                        <div class="fw-bold fs-20px mb-3">Newsletter</div>
+                        <div class="fs-medium mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel in ipsa
+                        </div>
+                        <input type="email" class="custom-input mb-3" placeholder="Enter your email">
+                        <button class="btn-red">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0">
+        <div class="bg-blue fs-medium text-white text-center py-4">
+            Copyright © AIMS Institute . All Right Reserved.
+        </div>
+    </footer>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
