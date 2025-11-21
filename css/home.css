@@ -1,0 +1,168 @@
+/* hero section start */
+.hero-banner {
+    height: 75vh;
+}
+
+.swiper-slide {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.swiper-btn:after {
+    font-size: 20px !important;
+}
+
+.swiper-btn {
+    height: 45px !important;
+    width: 45px !important;
+    color: var(--quaternary-color) !important;
+    border: 1px solid var(--quaternary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.swiper-btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.shadow-effect {
+    position: relative;
+}
+
+.shadow-effect {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #367fcc2a;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+/* hero section end */
+
+
+.max-w-285px {
+    max-width: 285px;
+}
+
+.max-w-560px {
+    max-width: 560px;
+}
+
+.max-w-255px {
+    max-width: 255px;
+}
+
+.min-h-160px {
+    min-height: 160px;
+}
+
+/* e learning start */
+.e-learning-bg {
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: auto;
+}
+
+.box-shadow-gray {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 60px 15px;
+}
+
+.max-w-530px {
+    max-width: 530px;
+}
+
+.max-w-450px {
+    max-width: 450px;
+}
+
+.py-120px {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* e learning end */
+
+/* choose us start */
+.choose-us {
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* choose us end */
+
+.skillbar-bar {
+    height: 15px;
+    width: 0px;
+}
+
+.review-form {
+    max-width: 280px;
+    width: 100%;
+}
+
+.owl-carousel {
+    max-width: 75%;
+    width: 100%;
+}
+
+.review-card {
+    height: 200px;
+    background-color: #f4f4f4;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: -12px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: -12px;
+}
+
+.owl-carousel .owl-nav button {
+    position: absolute;
+    top: 43%;
+    background-color: var(--quaternary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+    height: 30px !important;
+    width: 30px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    transition: all 0.3s !important;
+    color: var(--primary-color) !important;
+}
+
+.owl-carousel .owl-nav button:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--quaternary-color) !important;
+}
+
+.owl-carousel .owl-nav button span {
+    font-size: 25px;
+}
+
+.accrediation-banner {
+    max-height: 300px;
+    height: 100%;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.client-image {
+    max-height: 180px;
+    height: 100%;
+    max-width: 180px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 40vh;
+    }
+}

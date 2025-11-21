@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIMS - Institute of Health & Safety</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- icon's cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <!-- heebo font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+    <!-- logo -->
+    <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- number counter start -->
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="js/owl-carousel/assets/owl.carousel.min.css">
+</head>
+
+<body>
+    <header>
+        <!-- pre header start -->
+        <div class="pre-header bg-blue">
+            <div class="container h-full">
+                <div class="flow-horizontal items-center justify-between h-full text-white text-nowrap">
+                    <div class="flow-horizontal gap-4 max-w-none md-max-w-340px">
+                        <div class="flow-horizontal gap-2 hidden md-block">
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="" class="text-white decoration-none">info@aimsinstitute.com</a>
+                        </div>
+                        <span class="hidden md-block">|</span>
+                        <div class="flow-horizontal gap-2">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <a href="" class="text-white decoration-none">+92 345 8274873</a>
+                        </div>
+                    </div>
+                    <div class="flow-horizontal justify-end gap-4 max-w-none md-max-w-340px">
+                        <div class="flow-horizontal gap-2 hidden md-flex">
+                            <a href="" class="text-white decoration-none">Follow Us :</a>
+                            <div class="flow-horizontal gap-3">
+                                <a href="" class="text-white decoration-none"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a href="" class="text-white decoration-none"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="" class="text-white decoration-none"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <span class="hidden md-block">|</span>
+                        <div class="flow-horizontal gap-2">
+                            <button class="text-white bg-none border-none p-0" type="button" id="open-auth-modal">Login
+                                / Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- pre header end -->
+
+        <!-- desktop navbar start -->
+        <nav class="navbar hidden md-block">
+            <div class="container h-full">
+                <div class="flow-horizontal justify-between h-full">
+                    <a href="index.html" class="flex items-center gap-2 decoration-none">
+                        <img src="images/logo2.png" width="85" height="85" alt="logo">
+                        <div class="flex flex-col">
+                            <div class="fw-heavybold fs-24px font-heebo text-blue leading-5">AIMS</div>
+                            <div class="fw-semibold fs-medium font-heebo text-red leading-5">Institute of Health and
+                                Safety</div>
+                        </div>
+                    </a>
+                    <div class="flow-horizontal gap-35px">
+                        <div class="flow-horizontal nav-link gap-6">
+                            <a href="index.html"
+                                class="fs-medium fw-semibold decoration-none text-blue active nav-link-hover-style">Home</a>
+                            <a href="about.html"
+                                class="fs-medium fw-semibold decoration-none text-blue nav-link-hover-style">About
+                                Us</a>
+                            <div class="menu-item">
+                                <a
+                                    class="flow-horizontal gap-1 fs-medium fw-semibold decoration-none text-blue cursor-pointer nav-link-hover-style">
+                                    Courses
+                                    <i class="fa-solid fa-chevron-down fs-sm decoration-none text-blue"></i>
+                                </a>
+
+                                <!-- MEGA MENU -->
+                                <div class="mega-menu">
+                                    <div class="mega-menu-content">
+
+                                        <div class="mega-col">
+                                            <h4>Development</h4>
+                                            <a href="#">Web Development</a>
+                                            <a href="#">App Development</a>
+                                            <a href="#">Machine Learning</a>
+                                            <a href="#">Data Structures</a>
+                                        </div>
+
+                                        <div class="mega-col">
+                                            <h4>Business</h4>
+                                            <a href="#">Entrepreneurship</a>
+                                            <a href="#">Marketing</a>
+                                            <a href="#">Sales</a>
+                                            <a href="#">Management</a>
+                                        </div>
+
+                                        <div class="mega-col">
+                                            <h4>Design</h4>
+                                            <a href="#">UI/UX Design</a>
+                                            <a href="#">Graphic Design</a>
+                                            <a href="#">Animation</a>
+                                        </div>
+
+                                        <div class="mega-col">
+                                            <h4>Data & IT</h4>
+                                            <a href="#">Cloud Computing</a>
+                                            <a href="#">Cybersecurity</a>
+                                            <a href="#">Data Science</a>
+                                            <a href="#">AI Essentials</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="blog.html"
+                                class="fs-medium fw-semibold decoration-none text-blue nav-link-hover-style">Blogs</a>
+                            <a href="contact.html"
+                                class="fs-medium fw-semibold decoration-none text-blue nav-link-hover-style">Contact
+                                Us</a>
+                        </div>
+                        <div class="flow-horizontal gap-6 border-l ps-5">
+                            <button class="bg-none border-none p-0">
+                                <i class="fas fa-search fs-xl"></i>
+                            </button>
+                            <a href="#accrediations"
+                                class="btn-blue fs-medium rounded-1 decoration-none">Accrediations</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- desktop navbar end -->
+
+        <!-- mobile navbar start -->
+        <nav class="mob-navbar w-full block md-hidden">
+            <div class="container flow-horizontal justify-between h-full">
+                <a href="index.html">
+                    <img src="images/logo2.png" alt="logo" width="70" height="70">
+                </a>
+                <div class="flow-horizontal gap-4">
+                    <a href="#accrediations" class="btn-blue fs-medium rounded-1 decoration-none">Accrediations</a>
+                    <i class="fa-solid fa-bars fs-24px" id="open-mobile-nav"></i>
+                </div>
+            </div>
+            <div class="mobile-menu bg-white fixed p-3 top-0" id="mobile-nav">
+                <i class="far fa-times-circle fs-24px text-red" id="close-mobile-nav"></i>
+                <div class="mobile-navlink flex flex-col gap-2 py-4">
+                    <a href="index.html" class="flex items-center gap-1 decoration-none text-blue fs-medium py-2">
+                        <i class="fas fa-angle-right"></i>Home
+                    </a>
+                    <a href="about.html" class="flex items-center gap-1 decoration-none text-blue fs-medium py-2">
+                        <i class="fas fa-angle-right"></i>About Us
+                    </a>
+                    <div class="fw-bold fs-20px text-red">All Courses</div>
+                    <ul style="list-style-type: none;" class="m-0">
+                        <li>
+                            <a href="about.html"
+                                class="flex items-center gap-1 decoration-none text-blue fs-medium py-2">
+                                <i class="fas fa-angle-right"></i>Level 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="flex items-center gap-1 decoration-none text-blue fs-medium py-2">
+                                <i class="fas fa-angle-right"></i>Level 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="flex items-center gap-1 decoration-none text-blue fs-medium py-2">
+                                <i class="fas fa-angle-right"></i>Level 3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="flex items-center gap-1 decoration-none text-blue fs-medium py-2">
+                                <i class="fas fa-angle-right"></i>Level 4
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="about.html" class="flex items-center gap-1 decoration-none text-blue fs-medium py-2">
+                        <i class="fas fa-angle-right"></i>Blogs
+                    </a>
+                    <a href="about.html" class="flex items-center gap-1 decoration-none text-blue fs-medium py-2">
+                        <i class="fas fa-angle-right"></i>Contact Us
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- mobile navbar end -->
+    </header>
+    <main>
+        <!-- hero section start -->
+        <section class="hero-banner relative">
+            <div class="swiper mySwiper h-full w-full">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide block h-full w-full"
+                        style="background-image: url('images/hero/banner-1.jpg');">
+                        <div class="shadow-effect"></div>
+                    </div>
+                    <div class="swiper-slide block h-full w-full"
+                        style="background-image: url('images/hero/banner-2.jpg');">
+                        <div class="shadow-effect"></div>
+                    </div>
+                    <div class="swiper-slide block h-full w-full"
+                        style="background-image: url('images/hero/banner-3.jpg');">
+                        <div class="shadow-effect"></div>
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-btn rounded-circle"></div>
+                <div class="swiper-button-prev swiper-btn rounded-circle"></div>
+            </div>
+        </section>
+        <!-- hero section end -->
+
+        <!-- box section start -->
+        <section>
+            <div class="bg-blue text-center">
+                <div class="container text-white flow-horizontal py-13 font-heebo fs-lg">
+                    <div class="flow-horizontal gap-4 md-gap-2 justify-center flex-wrap">
+                        <div class="max-w-285px">
+                            <img src="images/EDUBIN0044-1.png" class="mb-2" alt="COMPETENCE BASED DIPLOMA">
+                            <h4 class="m-0">COMPETENCE BASED DIPLOMA</h4>
+                            <div class="mt-2">
+                                You may obtain experience-based diplomas upon meeting the required criteria for
+                                verified
+                                professional experience.
+                            </div>
+                        </div>
+                        <div class="max-w-285px">
+                            <img src="images/EDUBIN0045-2.png" class="mb-2" alt="BOOKS & LIBRARY">
+                            <h4 class="m-0">BOOKS & LIBRARY</h4>
+                            <div class="mt-2">
+                                Masterstudy is one of the world's busiest public library systems, with over 10
+                                million
+                                books,
+                                movies and other items to borrow.
+                            </div>
+                        </div>
+                        <div class="max-w-285px">
+                            <img src="images/EDUBIN0045-2.png" class="mb-2" alt="ALUMNI SUCCESS">
+                            <h4 class="m-0">ALUMNI SUCCESS</h4>
+                            <div class="mt-2">
+                                We take pride in our distinguished alumni who are making significant contributions to
+                                the
+                                field of Health and Safety across the globe.
+                            </div>
+                        </div>
+                        <div class="max-w-285px">
+                            <img src="images/EDUBIN0046-3.png" class="mb-2" alt="ACCREDIATIONS">
+                            <h4 class="m-0">ACCREDIATIONS</h4>
+                            <div class="mt-2">
+                                Recognized and accredited by reputable national and international bodies that uphold
+                                the
+                                highest standards of education and training.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- box section end -->
+
+        <!-- E-Learning start -->
+        <section>
+            <div class="bg-white mt-15">
+                <div class="container">
+                    <div class="box-shadow-gray e-learning-bg py-13 fs-lg flow-horizontal rounded-3"
+                        style="background-image: url('images/EDUBIN00152-2.png');">
+                        <div class="flow-horizontal justify-center gap-10 mx-auto flex-col md-flex-row">
+                            <div class="max-w-530px px-4 md-px-0">
+                                <div class="text-red fs-2medium font-caveat">
+                                    It’s limited seating! Hurry up
+                                </div>
+                                <h1 class="text-blue fs-36px">
+                                    <span>LEARN Health & Safety for every situation either</span>
+                                    <span class="text-light-blue">In Classroom or </span>
+                                    <span>E-Learning</span>
+                                </h1>
+                                <button class="btn-blue py-3 px-7 fs-lg">Sign Up</button>
+                            </div>
+                            <div class="px-4 ">
+                                <img class="rounded-3 box-shadow-small max-w-450px w-full" src="images/e-learning.avif"
+                                    alt="e learning">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- E-Learning end -->
+
+        <!-- whay choose us start -->
+        <section>
+            <div class="background-norepeat w-full choose-us"
+                style="background-image: url('images/global-students.jpg');">
+                <div class="container h-full">
+                    <div class="flow-horizontal flex-col md-flex-row justify-between gap-15 h-full py-120px">
+                        <div class="flex flex-col gap-4 w-full max-w-560px h-full">
+                            <div class="flex flex-col gap-6">
+                                <div class="flex flex-col gap-2">
+                                    <div class="fw-bold text-light-yellow">Why choose us</div>
+                                    <div class="fw-heavybold text-white fs-2medium">AIMS SAFETY ENGINEERING INSTITUTE
+                                    </div>
+                                </div>
+                                <div class="flex flex-col gap-6">
+                                    <div class="skillbar clearfix flex flex-col gap-2" data-percent="30%">
+                                        <div class="flex justify-between">
+                                            <div class="text-white fw-semibold fs-medium">ASP CSP trainings</div>
+                                            <div class="text-white fw-semibold fs-medium">30%</div>
+                                        </div>
+                                        <div class="skillbar-bar bg-light-yellow"></div>
+                                    </div>
+                                    <div class="skillbar clearfix flex flex-col gap-2" data-percent="78%">
+                                        <div class="flex justify-between">
+                                            <div class="text-white fw-semibold fs-medium">NVQ CERTIFICATIONS IN OSH
+                                            </div>
+                                            <div class="text-white fw-semibold fs-medium">78%</div>
+                                        </div>
+                                        <div class="skillbar-bar bg-light-yellow"></div>
+                                    </div>
+                                    <div class="skillbar clearfix flex flex-col gap-2" data-percent="90%">
+                                        <div class="flex justify-between">
+                                            <div class="text-white fw-semibold fs-medium">OTHM CERTIFICATIONS IN OSH
+                                            </div>
+                                            <div class="text-white fw-semibold fs-medium">90%</div>
+                                        </div>
+                                        <div class="skillbar-bar bg-light-yellow"></div>
+                                    </div>
+                                    <div class="skillbar clearfix flex flex-col gap-2" data-percent="85%">
+                                        <div class="flex justify-between">
+                                            <div class="text-white fw-semibold fs-medium">Train the Trainer
+                                                Certifications</div>
+                                            <div class="text-white fw-semibold fs-medium">85%</div>
+                                        </div>
+                                        <div class="skillbar-bar bg-light-yellow"></div>
+                                    </div>
+                                    <div class="skillbar clearfix flex flex-col gap-2" data-percent="100%">
+                                        <div class="flex justify-between">
+                                            <div class="text-white fw-semibold fs-medium">ISO LEAD AUDITOR
+                                                Certifications</div>
+                                            <div class="text-white fw-semibold fs-medium">100%</div>
+                                        </div>
+                                        <div class="skillbar-bar bg-light-yellow"></div>
+                                    </div>
+                                    <div class="skillbar clearfix flex flex-col gap-2" data-percent="60%">
+                                        <div class="flex justify-between">
+                                            <div class="text-white fw-semibold fs-medium">BASIC CERTIFICATIONS IN HEALTH
+                                                & SAFETY</div>
+                                            <div class="text-white fw-semibold fs-medium">60%</div>
+                                        </div>
+                                        <div class="skillbar-bar bg-light-yellow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-6 w-full max-w-560px h-full">
+                            <div class="fw-heavybold text-white fs-30px leading-9">Here you can review some statistics
+                                about
+                                our Education Center</div>
+                            <div class="flow-horizontal justify-center md-justify-between gap-6 flex-wrap">
+                                <div
+                                    class="flex flex-col justify-center items-center gap-2 bg-black w-full max-w-255px  min-h-160px">
+                                    <span class="counter fw-bold fs-40px text-light-yellow">2,740</span>
+                                    <div class="fw-medium fs-20px text-white">Foreign Follower</div>
+                                </div>
+                                <div
+                                    class="flex flex-col justify-center items-center gap-2 bg-black w-full max-w-255px  min-h-160px">
+                                    <span class="counter fw-bold fs-40px text-light-yellow">800</span>
+                                    <div class="fw-medium fs-20px text-white">Complete Classes</div>
+                                </div>
+                                <div
+                                    class="flex flex-col justify-center items-center gap-2 bg-black w-full max-w-255px  min-h-160px">
+                                    <span class="counter fw-bold fs-40px text-light-yellow">13,500</span>
+                                    <div class="fw-medium fs-20px text-white">Students Enrolled</div>
+                                </div>
+                                <div
+                                    class="flex flex-col justify-center items-center gap-2 bg-black w-full max-w-255px  min-h-160px">
+                                    <span class="counter fw-bold fs-40px text-light-yellow">150</span>
+                                    <div class="fw-medium fs-20px text-white">Certified Teachers</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- whay choose us end -->
+
+        <!-- review start -->
+        <section>
+            <div class="container mt-15">
+                <div class="flex flex-col items-center md-flex-row gap-4">
+                    <div class="flex items-start justify-between review-form gap-2">
+                        <img src="images/logo2.png" alt="logo" width="70" height="70">
+                        <div class="flex flex-col items-start gap-2">
+                            <div class="fs-medium fw-bold leading-4 text-blue"> AIMS Safety Engineering Institute</div>
+                            <div class="flow-horizontal gap-1">
+                                <img src="images/star.svg" alt="star" width="17" height="17">
+                                <img src="images/star.svg" alt="star" width="17" height="17">
+                                <img src="images/star.svg" alt="star" width="17" height="17">
+                                <img src="images/star.svg" alt="star" width="17" height="17">
+                                <img src="images/star.svg" alt="star" width="17" height="17">
+                            </div>
+                            <div class="fs-medium"> 70 Google Reviews </div>
+                            <button class="btn-blue-outline">Write a review</button>
+                        </div>
+                    </div>
+                    <div class="owl-carousel">
+                        <div class="review-card flex flex-col items-start gap-2 p-4 rounded-2">
+                            <div class="flex w-full justify-between">
+                                <div class="flow-horizontal gap-2">
+                                    <img src="images/review/img-1.jpg" class="rounded-circle" alt="review profile"
+                                        width="40" height="40">
+                                    <div>
+                                        <div class="fs-lg fw-bold text-blue leading-4">Rizwan Arshad</div>
+                                        <div class="fs-regular text-red">8 months ago</div>
+                                    </div>
+                                </div>
+                                <img src="images/icons/google.svg" alt="google" width="20" height="20">
+                            </div>
+                            <div class="flow-horizontal gap-1">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/icons/verified.svg" class="ms-1" alt="verified" width="17" height="17">
+                            </div>
+                            <div>
+                                <div class="fs-medium leading-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, facere at impedit
+                                    possimus commodi cumque quasi!
+                                </div>
+                                <button class="text-red bg-none border-none p-0 hover-text-underline mt-2">Read
+                                    more</button>
+                            </div>
+                        </div>
+                        <div class="review-card flex flex-col items-start gap-2 p-4 rounded-2">
+                            <div class="flex w-full justify-between">
+                                <div class="flow-horizontal gap-2">
+                                    <img src="images/review/img-1.jpg" class="rounded-circle" alt="review profile"
+                                        width="40" height="40">
+                                    <div>
+                                        <div class="fs-lg fw-bold text-blue leading-4">Rizwan Arshad</div>
+                                        <div class="fs-regular text-red">8 months ago</div>
+                                    </div>
+                                </div>
+                                <img src="images/icons/google.svg" alt="google" width="20" height="20">
+                            </div>
+                            <div class="flow-horizontal gap-1">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/icons/verified.svg" class="ms-1" alt="verified" width="17" height="17">
+                            </div>
+                            <div>
+                                <div class="fs-medium leading-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, facere at impedit
+                                    possimus commodi cumque quasi!
+                                </div>
+                                <button class="text-red bg-none border-none p-0 hover-text-underline mt-2">Read
+                                    more</button>
+                            </div>
+                        </div>
+                        <div class="review-card flex flex-col items-start gap-2 p-4 rounded-2">
+                            <div class="flex w-full justify-between">
+                                <div class="flow-horizontal gap-2">
+                                    <img src="images/review/img-1.jpg" class="rounded-circle" alt="review profile"
+                                        width="40" height="40">
+                                    <div>
+                                        <div class="fs-lg fw-bold text-blue leading-4">Rizwan Arshad</div>
+                                        <div class="fs-regular text-red">8 months ago</div>
+                                    </div>
+                                </div>
+                                <img src="images/icons/google.svg" alt="google" width="20" height="20">
+                            </div>
+                            <div class="flow-horizontal gap-1">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/icons/verified.svg" class="ms-1" alt="verified" width="17" height="17">
+                            </div>
+                            <div>
+                                <div class="fs-medium leading-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, facere at impedit
+                                    possimus commodi cumque quasi!
+                                </div>
+                                <button class="text-red bg-none border-none p-0 hover-text-underline mt-2">Read
+                                    more</button>
+                            </div>
+                        </div>
+                        <div class="review-card flex flex-col items-start gap-2 p-4 rounded-2">
+                            <div class="flex w-full justify-between">
+                                <div class="flow-horizontal gap-2">
+                                    <img src="images/review/img-1.jpg" class="rounded-circle" alt="review profile"
+                                        width="40" height="40">
+                                    <div>
+                                        <div class="fs-lg fw-bold text-blue leading-4">Rizwan Arshad</div>
+                                        <div class="fs-regular text-red">8 months ago</div>
+                                    </div>
+                                </div>
+                                <img src="images/icons/google.svg" alt="google" width="20" height="20">
+                            </div>
+                            <div class="flow-horizontal gap-1">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/icons/verified.svg" class="ms-1" alt="verified" width="17" height="17">
+                            </div>
+                            <div>
+                                <div class="fs-medium leading-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, facere at impedit
+                                    possimus commodi cumque quasi!
+                                </div>
+                                <button class="text-red bg-none border-none p-0 hover-text-underline mt-2">Read
+                                    more</button>
+                            </div>
+                        </div>
+                        <div class="review-card flex flex-col items-start gap-2 p-4 rounded-2">
+                            <div class="flex w-full justify-between">
+                                <div class="flow-horizontal gap-2">
+                                    <img src="images/review/img-1.jpg" class="rounded-circle" alt="review profile"
+                                        width="40" height="40">
+                                    <div>
+                                        <div class="fs-lg fw-bold text-blue leading-4">Rizwan Arshad</div>
+                                        <div class="fs-regular text-red">8 months ago</div>
+                                    </div>
+                                </div>
+                                <img src="images/icons/google.svg" alt="google" width="20" height="20">
+                            </div>
+                            <div class="flow-horizontal gap-1">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/icons/verified.svg" class="ms-1" alt="verified" width="17" height="17">
+                            </div>
+                            <div>
+                                <div class="fs-medium leading-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, facere at impedit
+                                    possimus commodi cumque quasi!
+                                </div>
+                                <button class="text-red bg-none border-none p-0 hover-text-underline mt-2">Read
+                                    more</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="flow-horizontal gap-3">
+                        <div class="review-card flex flex-col items-start gap-2 p-4 rounded-2">
+                            <div class="flex w-full justify-between">
+                                <div class="flow-horizontal gap-2">
+                                    <img src="images/review/img-1.jpg" class="rounded-circle" alt="review profile"
+                                        width="40" height="40">
+                                    <div>
+                                        <div class="fs-lg fw-bold text-blue leading-4">Rizwan Arshad</div>
+                                        <div class="fs-regular text-red">8 months ago</div>
+                                    </div>
+                                </div>
+                                <img src="images/icons/google.svg" alt="google" width="20" height="20">
+                            </div>
+                            <div class="flow-horizontal gap-1">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/icons/verified.svg" class="ms-1" alt="verified" width="17" height="17">
+                            </div>
+                            <div>
+                                <div class="fs-medium leading-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, facere at impedit
+                                    possimus commodi cumque quasi!
+                                </div>
+                                <button class="text-red bg-none border-none p-0 hover-text-underline mt-2">Read
+                                    more</button>
+                            </div>
+                        </div>
+                        <div class="review-card flex flex-col items-start gap-2 p-4 rounded-2">
+                            <div class="flex w-full justify-between">
+                                <div class="flow-horizontal gap-2">
+                                    <img src="images/review/img-1.jpg" class="rounded-circle" alt="review profile"
+                                        width="40" height="40">
+                                    <div>
+                                        <div class="fs-lg fw-bold text-blue leading-4">Rizwan Arshad</div>
+                                        <div class="fs-regular text-red">8 months ago</div>
+                                    </div>
+                                </div>
+                                <img src="images/icons/google.svg" alt="google" width="20" height="20">
+                            </div>
+                            <div class="flow-horizontal gap-1">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/icons/verified.svg" class="ms-1" alt="verified" width="17" height="17">
+                            </div>
+                            <div>
+                                <div class="fs-medium leading-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, facere at impedit
+                                    possimus commodi cumque quasi!
+                                </div>
+                                <button class="text-red bg-none border-none p-0 hover-text-underline mt-2">Read
+                                    more</button>
+                            </div>
+                        </div>
+                        <div class="review-card flex flex-col items-start gap-2 p-4 rounded-2">
+                            <div class="flex w-full justify-between">
+                                <div class="flow-horizontal gap-2">
+                                    <img src="images/review/img-1.jpg" class="rounded-circle" alt="review profile"
+                                        width="40" height="40">
+                                    <div>
+                                        <div class="fs-lg fw-bold text-blue leading-4">Rizwan Arshad</div>
+                                        <div class="fs-regular text-red">8 months ago</div>
+                                    </div>
+                                </div>
+                                <img src="images/icons/google.svg" alt="google" width="20" height="20">
+                            </div>
+                            <div class="flow-horizontal gap-1">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/star.svg" alt="review star" width="17" height="17">
+                                <img src="images/icons/verified.svg" class="ms-1" alt="verified" width="17" height="17">
+                            </div>
+                            <div>
+                                <div class="fs-medium leading-6">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, facere at impedit
+                                    possimus commodi cumque quasi!
+                                </div>
+                                <button class="text-red bg-none border-none p-0 hover-text-underline mt-2">Read
+                                    more</button>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!-- review end -->
+
+        <!-- accreditation start -->
+        <section id="accrediations">
+            <div class="container">
+                <div class="bg-white rounded-2 p-5 shadow mb-5">
+                    <div>
+                        <div class="fs-2medium text-red fw-heavybold">
+                            OTHM (Organization for Tourism and Hospitality Management)
+                            <span class="fs-lg text-blue">(Accrediations)</span>
+                        </div>
+                        <div class="fw-semibold">
+                            Check The List of Courses Offered from OTHM by clicking here
+                            <a href="accreditation-detail.html"
+                                class="text-yellow hover-text-underline decoration-none fw-semibold">
+                                More Details
+                            </a>
+                        </div>
+                    </div>
+                    <img class="accrediation-banner" src="images/accrediation.jpg" alt="accrediations">
+                </div>
+                <div class="bg-white rounded-2 p-5 shadow mb-5">
+                    <div>
+                        <div class="fs-2medium text-red fw-heavybold">
+                            OTHM (Organization for Tourism and Hospitality Management)
+                            <span class="fs-lg text-blue">(Accrediations)</span>
+                        </div>
+                        <div class="fw-semibold">
+                            Check The List of Courses Offered from OTHM by clicking here
+                            <a href="accreditation-detail.html"
+                                class="text-yellow hover-text-underline decoration-none fw-semibold">
+                                More Details
+                            </a>
+                        </div>
+                    </div>
+                    <img class="accrediation-banner" src="images/accrediation.jpg" alt="accrediations">
+                </div>
+            </div>
+        </section>
+        <!-- accreditation end -->
+
+        <!-- clients start -->
+        <section>
+            <div class="container">
+                <div class="owl-carousel mx-auto mt-10">
+                    <div class="flex flex-col items-center gap-1">
+                        <img src="images/clients/1.png" alt="client 1" class="client-image">
+                        <div class="text-yellow fs-20px">OCTAL OMAN</div>
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
+                        <img src="images/clients/2.png" alt="client 2" class="client-image">
+                        <div class="text-yellow fs-xl">Masood Textile Mills</div>
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
+                        <img src="images/clients/3.png" alt="client 3" class="client-image">
+                        <div class="text-yellow fs-xl">Cero Uno 01 Biological</div>
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
+                        <img src="images/clients/4.png" alt="client 4" class="client-image">
+                        <div class="text-yellow fs-xl">EmmSee Nutraceuticals</div>
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
+                        <img src="images/clients/5.png" alt="client 5" class="client-image">
+                        <div class="text-yellow fs-xl">Interloop Limited</div>
+                    </div>
+                    <div class="flex flex-col items-center gap-1">
+                        <img src="images/clients/6.png" alt="client 6" class="client-image">
+                        <div class="text-yellow fs-xl">Nesma & Partners Co.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- clients end -->
+
+        <!-- authentication modal start -->
+        <div class="fixed w-full h-full auth-modal-container top-0 left-0 flow-horizontal justify-center hidden">
+            <div class="auth-modal">
+                <div class="text-end p-4">
+                    <i class="far fa-times-circle fs-xl cursor-pointer text-red" id="close-auth-modal"></i>
+                </div>
+                <div class="flow-horizontal toggle-btn-container mx-auto mb-3">
+                    <button
+                        class="w-half border-none bg-light-gray py-3 fw-semibold rounded-0 active text-red toggle-auth-mode fs-medium"
+                        data-tab-index="1">Sign
+                        In</button>
+                    <button
+                        class="w-half border-none bg-light-gray py-3 fw-semibold rounded-0 text-red toggle-auth-mode fs-medium"
+                        data-tab-index="2">Sign
+                        Up</button>
+                </div>
+                <div class="auth-tab text-center p-4" data-tab="1">
+                    <div class="mb-8">
+                        <div class="fs-2medium fw-bold text-blue">Sign in</div>
+                        <div class="flow-horizontal gap-1 justify-center">
+                            <span class="fs-medium text-gray">Don't have an account?</span>
+                            <button class="p-0 bg-none border-none text-red fs-medium toggle-auth-mode"
+                                data-tab-index="2">Sign up</button>
+                        </div>
+                    </div>
+                    <form action="" class="px-6">
+                        <div class="mb-6">
+                            <input type="email" class="custom-input w-full" placeholder="Email Address">
+                        </div>
+                        <div class="mb-6">
+                            <input type="password" class="custom-input w-full" placeholder="Password">
+                        </div>
+                        <div class="flow-horizontal justify-between mb-6">
+                            <div class="flow-horizontal gap-1">
+                                <input type="checkbox" id="remember">
+                                <label for="remember" class="fs-medium cursor-pointer">Remember Me</label>
+                            </div>
+                            <a href="" class="text-light-blue fs-medium decoration-none">Forget Password?</a>
+                        </div>
+                        <button class="btn-red w-full mb-8">Sign In</button>
+                    </form>
+                </div>
+                <div class="auth-tab text-center p-4 hidden" data-tab="2">
+                    <div class="mb-8">
+                        <div class="fs-2medium fw-bold text-blue">Sign up</div>
+                        <div class="flow-horizontal gap-1 justify-center">
+                            <span class="fs-medium text-gray">Already have an account?</span>
+                            <button class="p-0 bg-none border-none text-red fs-medium toggle-auth-mode"
+                                data-tab-index="1">Sign in</button>
+                        </div>
+                    </div>
+                    <form action="" class="px-6">
+                        <div class="mb-6">
+                            <input type="name" class="custom-input w-full" placeholder="Username">
+                        </div>
+                        <div class="mb-6">
+                            <input type="email" class="custom-input w-full" placeholder="Email Address">
+                        </div>
+                        <div class="mb-6">
+                            <input type="password" class="custom-input w-full" placeholder="Password">
+                        </div>
+                        <button class="btn-red w-full mb-6">Sign Up</button>
+                    </form>
+                    <div class="fs-medium px-6">By creating an account you agree the <a href="term-condition.html"
+                            class="decoration-none text-red">terms & condiiton</a> and <a href="privacy-policy.html"
+                            class="decoration-none text-red">privacy policy</a>.</div>
+                </div>
+            </div>
+        </div>
+        <!-- authentication modal end -->
+
+        <!-- whatsapp chat start -->
+        <a href="https://wa.me/" target="_blank" class="fixed bottom-5 right-5 whatsapp-chat">
+            <img src="images/whatsapp.svg" alt="whatsapp" width="50" height="50">
+        </a>
+        <!-- whatsapp chat end -->
+    </main>
+    <footer>
+        <div class="footer bg-blue text-white py-13">
+            <div class="container">
+                <div class="flex justify-between flex-col md-flex-row gap-3">
+                    <div class="flex flex-col justify-between max-w-100 md-max-w-25 w-full">
+                        <div class="fw-bold fs-20px mb-3">About Us</div>
+                        <div class="fs-medium mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel in ipsa reiciendis nemo debitis
+                            iste exercitationem inventore
+                        </div>
+                        <div class="flex items-center gap-2 fs-medium mb-2">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, at!
+                        </div>
+                        <div class="flex items-center gap-2 fs-medium mb-2">
+                            <i class="fas fa-envelope"></i>
+                            info@aimsinstitute.com
+                        </div>
+                        <div class="flex items-center gap-2 fs-medium">
+                            <i class="fas fa-phone"></i>
+                            +92 323 2354474
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-between max-w-100 md-max-w-25 w-full">
+                        <div class="fw-bold fs-20px mb-3">Quick links</div>
+                        <a href="home.html"
+                            class="fs-medium text-white decoration-none hover-text-underline mb-3">Home</a>
+                        <a href="about.html"
+                            class="fs-medium text-white decoration-none hover-text-underline mb-3">About Us</a>
+                        <a href="course.html"
+                            class="fs-medium text-white decoration-none hover-text-underline mb-3">Courses</a>
+                        <a href="terms.html"
+                            class="fs-medium text-white decoration-none hover-text-underline mb-3">Terms &
+                            Conditions</a>
+                    </div>
+                    <div class="flex flex-col justify-between max-w-100 md-max-w-25 w-full">
+                        <div class="fw-bold fs-20px mb-3">Courses</div>
+                        <a href="home.html"
+                            class="fs-medium text-white decoration-none hover-text-underline mb-3">Graduate Programs</a>
+                        <a href="about.html"
+                            class="fs-medium text-white decoration-none hover-text-underline mb-3">Diploma courses</a>
+                        <a href="course.html"
+                            class="fs-medium text-white decoration-none hover-text-underline mb-3">Undergraduate
+                            courses</a>
+                        <a href="terms.html"
+                            class="fs-medium text-white decoration-none hover-text-underline mb-3">Short Courses</a>
+                        <a href="terms.html"
+                            class="fs-medium text-white decoration-none hover-text-underline mb-3">Other Courses</a>
+                    </div>
+                    <div class="flex flex-col justify-between max-w-100 md-max-w-25 w-full">
+                        <div class="fw-bold fs-20px mb-3">Newsletter</div>
+                        <div class="fs-medium mb-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel in ipsa
+                        </div>
+                        <input type="email" class="custom-input mb-3" placeholder="Enter your email">
+                        <button class="btn-red">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="m-0">
+        <div class="bg-blue fs-medium text-white text-center py-4">
+            Copyright © AIMS Institute . All Right Reserved.
+        </div>
+    </footer>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- number counter bar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.countup.js"></script>
+    <script src="js/home.js"></script>
+
+    <!-- owl carousel -->
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                nav: true,
+                autoplay: true,
+                margin: 10,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                },
+            });
+        });
+        $('.counter').countUp();
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            speed: 1000,
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
